@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{%block head %}
+
+{%endblock%}
+
+{%block body%}
+    <div class="row justify-content-center">
+        <div class="col-sm-5">
+            <form action="/update/{{name_to_update.id}}" method="POST" autocomplete="off">
+                {{ form.hidden_tag() }}
+
+                {{ form.name.label(class="form-label") }}
+                {{ form.name(class="form-control", value=name_to_update.name) }}
+
+                {{ form.email.label(class="form-label") }}
+                {{ form.email(class="form-control", value=name_to_update.email) }}
+                <br>
+                {{ form.submit(class="btn btn-secondary ") }}
+            </form>
+        </div>
+    </div>
+{%endblock%}

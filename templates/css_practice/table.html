@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{%extends 'base.html'%}   
+
+{%block head%}
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1663/1663834.png" type="image/x-icon">
-    <title>Table</title>
     
     <style>
         .container{
@@ -52,8 +49,9 @@
             border: solid #454 2px;
         }
     </style>
-</head>
-<body>
+{%endblock%}
+
+{%block body%}
     <div class="container">
         <table>
             <thead>
@@ -82,9 +80,5 @@
                 </tr>
             </tbody>
         </table>
-
-        
     </div>
-    
-</body>
-</html>
+{%endblock%}

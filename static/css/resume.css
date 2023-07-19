@@ -1,0 +1,28 @@
+#heading{
+    margin-top:5rem;
+}
+.portfolio-index {
+    margin: 0 150px 0 150px !important;
+    border: red dotted 1px;
+    padding-bottom: 500px;
+}
+.about_me{
+    /* padding-bottom: 500px; */
+    background: rgb(107, 187, 107);
+}
+#portfolio-img{
+    padding-bottom: 400px;
+    width:400px;
+    height:400px;
+    border-radius:500px;
+    background: #ffffff url("https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/358045770_6275776455849678_3401330113580491435_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEdh6DUM-PpcQjyHfURT-LPDNpY8lju5P4M2ljyWO7k_g-CcxnRtsN67wwE33ZA6lL2_8EHHn-lGBBMyWi0LCIF&_nc_ohc=0TTgw0vtpPUAX-dmBWG&_nc_ht=scontent.fmnl17-3.fna&oh=00_AfAq1TNtCuK0huXCOkPu8wLTQkBO5Bu1KCeWmANrFdRZ-g&oe=64B9A668")
+     no-repeat center;
+    background-size:cover;
+    filter: grayscale(100%);
+}
+.nav-link{
+    border-bottom: solid 2px transparent;
+}
+.nav-link:hover {
+    border-bottom: solid 2px;
+}

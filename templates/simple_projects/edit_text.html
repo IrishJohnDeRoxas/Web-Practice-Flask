@@ -1,0 +1,58 @@
+{%extends 'base.html' %}
+
+{%block head%}
+{%endblock%}
+
+{%block body%}
+    {% if name %}
+        {% for message in get_flashed_messages() %}
+            <div class="toast position-absolute top-0 end-0 mt-5" role="alert" aria-live="assertive" aria-atomic="true" id="nice">
+                <div class="toast-header">
+                    <strong class="me-auto">🤸🤸🤸</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    {{message}}
+                </div>
+            </div>
+        {% endfor %}
+        
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-2 names">
+                <div class="col col-mdx-5">
+                    
+                    <h1>{{name}}</h1>
+                </div>
+            </div>    
+        </div>
+        
+    {% else %}
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col-sm-5">
+                <h2>Enter Text:</h2>
+                <form method="POST" autocomplete="off">
+                    {{ form.hidden_tag() }}
+                    
+                    <!-- {{ form.name.label(class="form-label") }} -->
+                    {{ form.name(class="form-control") }}
+                    <br>
+                    {{ form.submit(class="btn btn-secondary ", onclick = "") }}
+                </form>
+
+            </div>
+        </div>
+    {% endif %}
+
+    
+    <!-- <button type="button" onclick = "greet()">Click</button>  
+    <script>
+        const greet = () =>{
+            alert("Hello World!");
+        }
+    </script> -->
+{% endblock %}
+
+
+
+{%block footer%}
+{%endblock%}

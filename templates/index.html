@@ -5,19 +5,8 @@
 {%endblock%}
 
 {%block body%}
-
-{% if user == 'admin' %}
-    <h1>Hi, {{user | capitalize}}</h1>
-{%endif%}
-
-<div style="position: relative; margin:auto; border: solid 1px green; width: 100px; height: auto; text-align:center">
-    {%for name in friends%}
-        <h4>{{name}}</h4>
-    {%endfor%}
-</div>
-
-<button onclick="change_text()"> press me</button>
-
-<h1 id="head">Janineeee!!!</h1>
+	<div id="heading" class="d-flex justify-content-center">
+		<h1>My flask, css, practice project compiled into one </h1>
+	</div>
 
 {%endblock%}

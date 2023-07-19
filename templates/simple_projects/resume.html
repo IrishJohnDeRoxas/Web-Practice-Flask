@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link rel="stylesheet" href="{{url_for('static', filename='css/resume.css')}}">
+{% endblock %}
+
+{% block body %}
+	<div class="portfolio-index mx-5">
+		<nav class="navbar navbar-expand-lg navbar-light mx-5 ">
+			<div class="container-fluid d-flex">
+				<a class="navbar-brand" href="#">IRISH JOHN</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item px-2">
+							<a class="nav-link" aria-current="page" href="#about_me">About me</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="#">Experience</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="#">Testimonial</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="d-flex justify-content-center ">
+			<div id="portfolio-img">
+				<!-- CSS img url -->
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="card">
+				<div class="card-body text-center">
+					<h1>Hi, I'm Irish John </h1> 
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- About me -->
+	<div  class="container about_me my-5" id="about_me">
+		<!-- TODO: Style this!  -->
+		<div class="container">
+			<div class="row">
+				<div class="col-6 text-start">
+					I am a web developer and designer with experience in HTML,CSS, JavaScript frameworks like React
+					and Nodejs.<br>
+					My expertise is building responsive websites that are user friendly. My goal as an individual contributor
+					My expertise lies within front end development using modern technologies such as Bootstrap or Materialize.
+					You can reach out for any project or job opportunity. Thank you!
+				</div>
+				<div class="col">
+
+				</div>
+				<div class="col-2 text-start">
+					Programming languages 
+					JavaScript (ES6+), Python <br/>
+					Frameworks/Libraries : Nodejs / React / Flask
+					Database Technologies - MySql
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Experience -->
+	<div class="experience container mt-4 mb-3 py-5 bg-light rounded border shadow-sm mx-auto p-0 offset-md-2">
+		<!-- TODO: Link github, linkedin, email, pictures of projects in github -->
+	</div>
+
+{% endblock %}
